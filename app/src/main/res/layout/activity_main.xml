@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="9dip"
+        android:text="Sleep time in Seconds:"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/in_time"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toRightOf="@id/tv_time"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="241dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/in_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="Run Async task"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/btn_run"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
